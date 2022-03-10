@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Regiones.PageRegiones">
+    <ContentPage.Content>
+        <StackLayout>
+            <!--Button x:Name="btnRegiones" Text="Buscar Regiones" Clicked="btnRegiones_Clicked"></Button-->
+            <Picker x:Name="pickerRegiones" Margin="10" Title="Seleccione una region" SelectedIndexChanged="pickerRegiones_SelectedIndexChanged">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Africa</x:String>
+                        <x:String>Americas</x:String>
+                        <x:String>Asia</x:String>
+                        <x:String>Europe</x:String>
+                        <x:String>Oceania</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <ListView x:Name="listaRegioens" HorizontalOptions="FillAndExpand" RowHeight="130" ItemSelected="listaRegioens_ItemSelected">
+                <ListView.ItemTemplate CornerRadius="10">
+                    <DataTemplate >
+                        <ViewCell >
+                            <Grid Margin="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Label Grid.Column="0" Grid.Row="0" Text="Nombre del pais:" FontAttributes="Bold" FontSize="14" />
+                                <Label Grid.Column="0" Grid.Row="1" Text="Bandera:" FontAttributes="Bold" FontSize="14" />
+
+                                <Label Grid.Column="1" Grid.Row="0" Text="{Binding translations.spa.common}" FontSize="14" />
+                                <Image Grid.Column="1" Grid.Row="1" Source="{Binding flags.png}" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

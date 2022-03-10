@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mapa="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="Regiones.Mapa">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout >
+                <Label x:Name="nombrePais" FontSize="20" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
+                <Grid Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Column="0" Grid.Row="0" Text="Region del pais:" FontSize="16" FontAttributes="Bold"/>
+                    <Label Grid.Column="0" Grid.Row="1" Text="SubRegion del pais:" FontSize="16" FontAttributes="Bold"/>
+                    <Label Grid.Column="0" Grid.Row="2" Text="Capital del pais:" FontSize="16" FontAttributes="Bold"/>
+                    <Label Grid.Column="0" Grid.Row="3" Text="Poblacion del pais:" FontSize="16" FontAttributes="Bold"/>
+
+                    <Label Grid.Column="1" Grid.Row="0" x:Name="region" FontSize="14" />
+                    <Label Grid.Column="1" Grid.Row="1" x:Name="subregion" FontSize="14" />
+                    <Label Grid.Column="1" Grid.Row="2" x:Name="capital" FontSize="14"/>
+                    <Label Grid.Column="1" Grid.Row="3" x:Name="Poblacion"  FontSize="14" />
+                </Grid>
+                
+                <Frame>
+                    <mapa:Map MapType="Hybrid" HorizontalOptions="FillAndExpand" HeightRequest="380"  x:Name="MapaPais"/>
+                </Frame>
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

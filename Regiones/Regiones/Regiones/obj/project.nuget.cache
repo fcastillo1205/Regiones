@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "DoJM4RqkKPpd+F8S5tCwyYopEsLhMtiag19H2xgP8kquvhutXHiia8Uui+OnaVGBTlFJjyevScdX/TKUTFIPZg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\FERNANDO-PC\\source\\repos\\Regiones\\Regiones\\Regiones\\Regiones.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\FERNANDO-PC\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\FERNANDO-PC\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\FERNANDO-PC\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\FERNANDO-PC\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\FERNANDO-PC\\.nuget\\packages\\xam.plugin.geolocator\\4.5.0.6\\xam.plugin.geolocator.4.5.0.6.nupkg.sha512",
+    "C:\\Users\\FERNANDO-PC\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\FERNANDO-PC\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512",
+    "C:\\Users\\FERNANDO-PC\\.nuget\\packages\\xamarin.forms.maps\\5.0.0.2196\\xamarin.forms.maps.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
